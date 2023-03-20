@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Card Generator</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -11,19 +12,44 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
+
+
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
-    </div>
+    <div class="container-fluid my-5 justify-content-center">
+          <div class="card" style="height: 27rem ">
+            <div
+              id="header-card"
+              class="text-left"
+              style="font-size: 50px; padding-left: 10px;"
+            >
+              ♥ 
+              ♠ 
+              ♦ 
+              ♣
+            </div>
+            <div
+              id="center-card"
+              class="position-absolute top-50 start-50 translate-middle"
+              style="font-size:100px"
+            >
+              "A"
+            </div>
+            <div
+              id="footer-card"
+              class="position-absolute bottom-0 end-0"
+              style="transform: rotate(180deg); font-size: 50px; padding-right: 15px;"
+            >
+              ♥ 
+              ♠ 
+              ♦ 
+              ♣
+            </div>
+          </div>
+        <div class="container-fluid my-3 justify-content-center d-flex">
+          <button class="bg-dark text-warning" onclick="generar()">
+            Dame una Carta
+          </button>
+        </div>
   </body>
 </html>
